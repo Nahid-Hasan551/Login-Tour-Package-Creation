@@ -21,6 +21,7 @@ class LoginPage:
         self.driver.find_element(By.NAME, self.Email_field_Name).send_keys(email)
         self.driver.find_element(By.NAME, self.Email_field_Name).send_keys(Keys.ENTER)
         time.sleep(2)
+
     def click_into_password(self):
         time.sleep(2)
         self.driver.find_element(By.NAME, self.Password_field_Name).click()
@@ -30,5 +31,3 @@ class LoginPage:
         self.driver.find_element(By.NAME, self.Password_field_Name).send_keys(password)
         time.sleep(5)
         self.driver.find_element(By.NAME, self.Password_field_Name).send_keys(Keys.ENTER)
-
-

@@ -1,4 +1,4 @@
-"""import time
+import time
 
 import pytest
 import self as self
@@ -12,6 +12,6 @@ from pages.PackageCreationPage import PackageCreationPage
 class TestPackageCreate:
     def test_for_create_tour_package(self):
         package_create_page = PackageCreationPage(self.driver)
-        package_create_page.click_into_package_submodule()
-        time.sleep(40)
-        "package_create_page.click_into_create_button()"""
+        package_create_page.select_tour()
+        time.sleep(3)
+        package_create_page.select_admin()
